@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="MPC" type="referencelineProvider.py" name="referencelineProvider" output="screen" />
+    <node pkg="MPC" type="mpc_carmodel" name="mpc_carmodel" output="screen"/>
+    <node pkg="MPC" type="mpc_control" name="mpc_control"  output="screen"/>
+    <node pkg= "rviz" type = "rviz" name = "rviz" args = "-d /home/wuchaohui/catkin_ws/src/MPC/rviz/test.rviz" required = "true"/>
+</launch>

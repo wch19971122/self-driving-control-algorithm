@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="pure_persuit" type="referencelineProvider.py" name="referencelineProvider" output="screen" />
+    <node pkg="pure_persuit" type="carmodel" name="carmodel" output="screen"/>
+    <node pkg="pure_persuit" type="pp" name="pp"  output="screen"/>
+    <node pkg= "rviz" type = "rviz" name = "rviz" args = "-d /home/wuchaohui/catkin_ws/src/pure_persuit/rviz/test.rviz" required = "true"/>
+</launch>

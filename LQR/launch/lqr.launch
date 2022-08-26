@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="LQR" type="referencelineProvider.py" name="referencelineProvider" output="screen" />
+    <node pkg="LQR" type="lqr_carmodel" name="lqr_carmodel" output="screen"/>
+    <node pkg="LQR" type="lqr_control" name="lqr_control"  output="screen"/>
+    <node pkg= "rviz" type = "rviz" name = "rviz" args = "-d /home/wuchaohui/catkin_ws/src/LQR/rviz/test.rviz" required = "true"/>
+</launch>
